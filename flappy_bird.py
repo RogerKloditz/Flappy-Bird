@@ -6,6 +6,7 @@ pygame.init()
 win = pygame.display.set_mode((800,400))
 clock = pygame.time.Clock()
 
+#COLORS
 B_COL = (67,197,57)
 P_COL = (197,66,47)
 BG_COL = (220,220,220)
@@ -92,10 +93,11 @@ def loseMessage():
     pygame.time.wait(1000)
 
     return True
-
+# Setup start
 bird = Player(30,30,30,30)
 pillars = []
 
+# Main loop
 while True:
 
     clock.tick(50)
@@ -112,9 +114,6 @@ while True:
         break
     
     redrawGameWindow()
-
-
-
 
 pygame.quit()
 sys.exit()
